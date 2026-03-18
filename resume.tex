@@ -1,0 +1,193 @@
+\documentclass[a4paper,20pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{xcolor}% http://ctan.org/pkg/xcolor
+\usepackage{hyperref}% http://ctan.org/pkg/hyperref
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue!50!red,
+  urlcolor=blue!70!black
+}
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.45in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-----------------------------
+%%%%%%  CV STARTS HERE  %%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Kevin Joseph }} & Email: \href{mailto:josephkevin1995@gmail.com}{josephkevin1995@gmail.com}\\
+  \href{https://josephkevin.dev}{Website: josephkevin.dev} & Mobile: +1 (516) 395-5190~~~~~~~~~~~~ \\
+\end{tabular*}
+
+%-----------EXPERIENCE-----------------
+\vspace{-5pt}
+\section{Professional Experience }
+  \resumeSubHeadingListStart
+    \resumeSubheading{Legal \& General America}{Full-time}
+    {Front-end Web Developer}{July 2018 - Present}
+    \resumeItemListStart
+        \item{Contributing to developing a \href{https://www.lgamerica.com/advisor/marketing/digital-application-platform}{digital platform} meant to speed up and automate the application and underwriting processes starting from a request for life insurance to the delivery of a policy to the customer.}
+        \item{Engaged in the design of a rule engine driven online dynamic journey meant to replace a paper application process.}
+        \item Contributed to the development of the above using the angular framework and helped create an application process that was 5x faster and had a 90\% completion rate. Close to 35\% of all applicants got a policy instantly, and 67\% got it without extra medical examinations.
+        \item Repurposed the same application for use by interviewers running a tele-application process.
+        \item Contributed to a dashboard-style angular application built for use by underwriters, case managers, and agents, which resulted in faster review of applications that needed additional review.
+        \item Contributed to a dashboard-style angular application built for use by customers to keep them updated about the status of their application before it is approved and to manage their policy once it is approved.
+        \item Contributed to containerization of development stack using docker which resulted in a more streamlined deployment and release process.
+        \item Actively participated in a company-wide IT transformation program.
+        \item Actively helped the company migrate to an agile development methodology and collaborated with multiple teams over the course of 3 years.
+      \resumeItemListEnd
+\vspace{-5pt}
+    \resumeSubheading
+		{Zoho Corp.}{Full-time}
+		{Member Technical Staff}{July 2017 -  March 2018}
+		\resumeItemListStart
+        \item Engaged in the early data modeling and API design of a new product, \href{https://www.zoho.com/contracts/}{Zoho Contract Management}.
+        \item Implemented the model and APIs using PostgreSQL, Java and an internal zoho framework.
+        \item Programmed an abstraction layer for integrating with another zoho service.
+        \item Collaborated with a thirteen-member team in the aforementioned work.
+		\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+%-----------EDUCATION-----------------
+\section{~~Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {College of Engineering Trivandrum(University of Kerala)}{Thiruvananthapuram, India}
+      {Bachelor of Technology - Computer Science and Engineering;  CGPA: 8.35/10}{2013 - 2017}
+      {\scriptsize{ \footnotesize{\newline{}\textbf{Courses:} Data Structures and algorithms, Data Base Design, Formal Language \& Automata Theory, Object Oriented Techniques, Design and Analysis of Algorithms, Soft Computing, Graph Theory}}}
+    \resumeSubHeadingListEnd
+%-----------PROJECTS-----------------
+\vspace{-5pt}
+\section{Academic Projects}
+\resumeSubHeadingListStart
+\resumeSubItem{Playing Atari Games using Reinforcement learning(B.Tech Final Project)}{Research oriented project based on paper: \href{https://arxiv.org/pdf/1312.5602.pdf}{https://arxiv.org/pdf/1312.5602.pdf} by the Deep Mind team at Google. Built a program that could achieve super human performance in atari games using Q-learning and convolutional neural networks.}
+\vspace{2pt}
+\resumeSubItem{Indoor Navigation system using Bluetooth Low Energy(BLE) tags}{Indoor navigation system that featured an AngularJS based admin panel to upload and configure maps and an android application for users to navigate on the map. The system was made for use within large malls or hospitals.}
+\vspace{2pt}
+\resumeSubItem{IEEE LINK App}{A Social networking application built for IEEE Local Integrated Network for Kerala(LINK) IEEE students.}
+\vspace{2pt}
+\resumeSubItem{Face-detection and photography rover}{An automated face detection and photography rover built for automated photography at events. It was built using a raspberry pi board and an android phone. It was deployed during a technical event at College of Engineering Trivandrum in 2014 and took 7000+ photos}
+\resumeSubHeadingListEnd
+
+%-----------Awards-----------------
+\vspace{-5pt}
+\section{Awards and Certifications}
+\begin{description}[font=$\bullet$]
+\item {\href{https://www.computer.org/volunteering/awards/scholarships/merwin/merwin-winners/2016-merwin-winners}{Richard E. Merwin Scholarship} - September, 2016}
+\vspace{-5pt}
+\item {\href{https://www.coursera.org/learn/machine-learning}{Coursera Machine Learning certification} by Stanford with 97.6\% score }
+\vspace{-5pt}
+\item {\href{https://www.coursera.org/learn/algorithmic-toolbox}{Coursera Algorithmic toolbox certification} by UC San Diego with 100\% score}
+\vspace{-5pt}
+\item {\href{https://www.scrumalliance.org/get-certified/scrum-master-track/certified-scrummaster}{Scrum Alliance certified scrum master}}
+
+\end{description}
+
+\vspace{-5pt}
+\section{Volunteer Experience}
+  \resumeSubHeadingListStart
+	\resumeSubheading
+    {IEEE Computer Society Student Ambassador }{2017}
+    {Functioned as a liaison between IEEE Computer Society Geographic Activities Board and student members}{}
+    \vspace{5pt}
+    % \vspace{10pt}\textbf{\large{Community Exptererience}}
+    \resumeSubheading
+    {IEEE Student branch technical coordinator}{2016}
+    {Organized college level technical events to encourage students to learn applied CS by building real world projects}{}
+     \vspace{5pt}
+    % \vspace{10pt}\textbf{\large{Community Exptererience}}
+    \resumeSubheading
+    {Local organizing team member: International workshop on Internet of Things}{2016}
+    {Two day technical on Internet of Things by \href{https://www.linkedin.com/in/soumya-kanti-datta-0907133b/?originalSubdomain=fr}{Soumya Kanti Datta}}{}
+    \vspace{5pt}
+    % \vspace{10pt}\textbf{\large{Community Exptererience}}
+    \resumeSubheading
+    {Google student Facilitator for Applied Computer Science}{2016}
+    {Taught and Facilitated a course on android app development by Google at College of Engineering Trivandrum}{}
+\vspace{5pt}
+    % \vspace{10pt}\textbf{\large{Community Exptererience}}
+    \resumeSubheading
+    {IEEE Computer Society Student Chapter Vice Chair}{2015}
+    {Organized events, conducted and delivered workshops on applied computing skills for IEEE CS branch members.}{}
+    \vspace{5pt}
+    % \vspace{10pt}\textbf{\large{Community Exptererience}}
+    \resumeSubheading
+    {Organizing team member: IEEE Computer Society India Symposium}{2015}
+    {First national level flagship technical event for Computer Society India}{}
+    
+
+\resumeSubHeadingListEnd
+
+\vspace{-5pt}
+\section{Skills}
+	\resumeSubHeadingListStart
+	\resumeSubItem{Technical skills}{Javascript, Typescript, Angular, HTML, CSS, SCSS, Redux, Git, Agile, Docker, C/C++, Java, \LaTeX}
+	\resumeSubItem{Soft Skills}{~~~~~~~Teaching, Leadership, Event Management, Writing, Public Speaking, trilingual(English, Malayalam, Hindi)}
+
+\resumeSubHeadingListEnd
+
+\end{document}
