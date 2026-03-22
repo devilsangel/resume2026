@@ -1,16 +1,17 @@
 \documentclass[a4paper,20pt]{article}
 
 \usepackage{latexsym}
+\usepackage{mathpazo}
+\usepackage[T1]{fontenc}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
 \usepackage{marvosym}
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage{enumitem}
-\usepackage[pdftex]{hyperref}
 \usepackage{fancyhdr}
-\usepackage{xcolor}% http://ctan.org/pkg/xcolor
-\usepackage{hyperref}% http://ctan.org/pkg/hyperref
+\usepackage{xcolor}
+\usepackage{hyperref}
 \hypersetup{
   colorlinks=true,
   linkcolor=blue!50!red,
@@ -18,7 +19,6 @@
 }
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
-\fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
@@ -48,12 +48,6 @@
   }
 }
 
-\newcommand{\resumeItemWithoutTitle}[1]{
-  \item\small{
-    {\vspace{-2pt}}
-  }
-}
-
 \newcommand{\resumeSubheading}[4]{
   \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
@@ -80,12 +74,12 @@
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
   \textbf{{\LARGE Kevin Joseph }} & Email: \href{mailto:josephkevin1995@gmail.com}{josephkevin1995@gmail.com}\\
-  \href{https://josephkevin.dev}{Website: josephkevin.dev} & Mobile: +1 (516) 395-5190~~~~~~~~~~~~ \\
+  \href{https://josephkevin.dev}{Website: josephkevin.dev} & Mobile: +1 (516) 395-5190 \\
 \end{tabular*}
 
 %-----------EXPERIENCE-----------------
 \vspace{-5pt}
-\section{Professional Experience }
+\section{Professional Experience}
   \resumeSubHeadingListStart
     \resumeSubheading{Legal \& General America}{Full-time}
     {Front-end Web Developer}{July 2018 - Present}
@@ -102,24 +96,16 @@
       \resumeItemListEnd
 \vspace{-5pt}
     \resumeSubheading
-		{Zoho Corp.}{Full-time}
-		{Member Technical Staff}{July 2017 -  March 2018}
-		\resumeItemListStart
+      {Zoho Corp.}{Full-time}
+      {Member Technical Staff}{July 2017 - March 2018}
+      \resumeItemListStart
         \item Engaged in the early data modeling and API design of a new product, \href{https://www.zoho.com/contracts/}{Zoho Contract Management}.
         \item Implemented the model and APIs using PostgreSQL, Java and an internal zoho framework.
         \item Programmed an abstraction layer for integrating with another zoho service.
         \item Collaborated with a thirteen-member team in the aforementioned work.
-		\resumeItemListEnd
+      \resumeItemListEnd
 
 \resumeSubHeadingListEnd
-%-----------EDUCATION-----------------
-\section{~~Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {College of Engineering Trivandrum(University of Kerala)}{Thiruvananthapuram, India}
-      {Bachelor of Technology - Computer Science and Engineering;  CGPA: 8.35/10}{2013 - 2017}
-      {\scriptsize{ \footnotesize{\newline{}\textbf{Courses:} Data Structures and algorithms, Data Base Design, Formal Language \& Automata Theory, Object Oriented Techniques, Design and Analysis of Algorithms, Soft Computing, Graph Theory}}}
-    \resumeSubHeadingListEnd
 %-----------PROJECTS-----------------
 \vspace{-5pt}
 \section{Academic Projects}
@@ -132,7 +118,13 @@
 \vspace{2pt}
 \resumeSubItem{Face-detection and photography rover}{An automated face detection and photography rover built for automated photography at events. It was built using a raspberry pi board and an android phone. It was deployed during a technical event at College of Engineering Trivandrum in 2014 and took 7000+ photos}
 \resumeSubHeadingListEnd
-
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {College of Engineering Trivandrum(University of Kerala)}{Thiruvananthapuram, India}
+      {Bachelor of Technology - Computer Science and Engineering;  CGPA: 8.35/10}{2013 - 2017}
+    \resumeSubHeadingListEnd
 %-----------Awards-----------------
 \vspace{-5pt}
 \section{Awards and Certifications}
@@ -154,31 +146,26 @@
     {IEEE Computer Society Student Ambassador }{2017}
     {Functioned as a liaison between IEEE Computer Society Geographic Activities Board and student members}{}
     \vspace{5pt}
-    % \vspace{10pt}\textbf{\large{Community Exptererience}}
     \resumeSubheading
     {IEEE Student branch technical coordinator}{2016}
     {Organized college level technical events to encourage students to learn applied CS by building real world projects}{}
-     \vspace{5pt}
-    % \vspace{10pt}\textbf{\large{Community Exptererience}}
+    \vspace{5pt}
     \resumeSubheading
     {Local organizing team member: International workshop on Internet of Things}{2016}
     {Two day technical on Internet of Things by \href{https://www.linkedin.com/in/soumya-kanti-datta-0907133b/?originalSubdomain=fr}{Soumya Kanti Datta}}{}
     \vspace{5pt}
-    % \vspace{10pt}\textbf{\large{Community Exptererience}}
     \resumeSubheading
     {Google student Facilitator for Applied Computer Science}{2016}
     {Taught and Facilitated a course on android app development by Google at College of Engineering Trivandrum}{}
-\vspace{5pt}
-    % \vspace{10pt}\textbf{\large{Community Exptererience}}
+    \vspace{5pt}
     \resumeSubheading
     {IEEE Computer Society Student Chapter Vice Chair}{2015}
     {Organized events, conducted and delivered workshops on applied computing skills for IEEE CS branch members.}{}
     \vspace{5pt}
-    % \vspace{10pt}\textbf{\large{Community Exptererience}}
     \resumeSubheading
     {Organizing team member: IEEE Computer Society India Symposium}{2015}
     {First national level flagship technical event for Computer Society India}{}
-    
+
 
 \resumeSubHeadingListEnd
 
