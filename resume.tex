@@ -76,56 +76,65 @@
 
 %----------SUMMARY-----------------
 \vspace{4pt}
-Front-end engineer with 7+ years building scalable web applications in Angular and TypeScript, with a background in agile teams and applied machine learning.
-
+Front-end engineer with 7+ years of experience building responsive, performant web apps in Angular, TypeScript, focused on shipping accessible UIs that improve engagement and conversion
 %-----------SKILLS-----------------
 \vspace{-5pt}
-\section{Skills}
+\section{Technical Skills}
   \resumeSubHeadingListStart
-    \resumeSubItem{Technical}{Javascript, Typescript, Angular, HTML, CSS, SCSS, Redux, Git, Agile, Docker, C/C++, Java, \LaTeX}
-    \resumeSubItem{Soft Skills}{Teaching, Leadership, Event Management, Writing, Public Speaking, trilingual (English, Malayalam, Hindi)}
+    \resumeSubItem{Languages \& Frameworks}{Angular, TypeScript, JavaScript, RxJS, HTML, SCSS, CSS, Storybook, Nx}
+    \resumeSubItem{Testing}{Jest, Jasmine, Karma, Spectator, ng-mocks}
+    \resumeSubItem{Backend \& APIs}{REST API Design, PostgreSQL}
+    \resumeSubItem{Real-time \& Integrations}{Microsoft SignalR (WebSocket), Datadog}
   \resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------------
 \vspace{-5pt}
 \section{Professional Experience}
   \resumeSubHeadingListStart
-    \resumeSubheading{Legal \& General America}{Full-time}
-      {Front-end Web Developer}{July 2018 - Present}
+    \resumeSubheading{Banner Life Insurance}{ 2018 -- Present}
+      {Application Engineer}{2020 -- Present}
       \resumeItemListStart
-        \item Contributing to developing a \href{https://www.lgamerica.com/advisor/marketing/digital-application-platform}{digital platform} meant to speed up and automate the application and underwriting processes starting from a request for life insurance to the delivery of a policy to the customer.
-        \item Engaged in the design of a rule engine driven online dynamic journey meant to replace a paper application process.
-        \item Contributed to the development of the above using the angular framework and helped create an application process that was 5x faster and had a 90\% completion rate. Close to 35\% of all applicants got a policy instantly, and 67\% got it without extra medical examinations.
-        \item Repurposed the same application for use by interviewers running a tele-application process.
-        \item Contributed to a dashboard-style angular application built for use by underwriters, case managers, and agents, which resulted in faster review of applications that needed additional review.
-        \item Contributed to a dashboard-style angular application built for use by customers to keep them updated about the status of their application before it is approved and to manage their policy once it is approved.
-        \item Contributed to containerization of development stack using docker which resulted in a more streamlined deployment and release process.
-        \item Actively participated in a company-wide IT transformation program.
-        \item Actively helped the company migrate to an agile development methodology and collaborated with multiple teams over the course of 3 years.
+        \item Co-founded and grew an Angular component library to 50+ reusable components shared across all Horizon applications, built with Angular and Storybook.
+        \item Architected and delivered four specialized frontend micro-libraries: IAM (authentication/authorization), Errors (global error handling), Metrics (logging and Datadog integration), and WebSocket (real-time communication via Microsoft SignalR).
+        \item Co-led migration of all frontend libraries and applications into a unified Nx monorepo, standardizing tooling, improving code sharing, and streamlining CI/CD across the platform.
+        \item Led migration of the test suite from Karma/Jasmine to Jest, improving test execution speed and developer experience across the monorepo.
+        \item Adopted ng-mocks to simplify Angular dependency mocking, reducing test boilerplate and improving test maintainability at scale.
+        \item Maintained greater than 80\% code coverage and enforced Sonar Way quality standards across all projects using SonarQube.
+        \item Engineered a full-lifecycle customer portal (Skyline) in Angular/NgRx; enabled policyholders to manage applications mid-journey and monitor payments, with a target adoption rate of 25\% by end of 2026.
+      \resumeItemListEnd
+    \vspace{2pt}
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{Associate Application Engineer} & \textit{ 2018 -- 2020} \\
+    \end{tabular*}\vspace{-5pt}
+      \resumeItemListStart
+        \item Led frontend development of a rules-driven Angular application replacing a paper-based life insurance process, driving instant decision rates from under 4\% to 46\% and exam-free application rates from 0\% to 80\%.
+        \item Developed an internal Application Manager dashboard enabling underwriters to manage assigned cases and auto-generated tasks, digitizing the post-submission review workflow and  reducing average underwriting cycle time from 50+ days to \textasciitilde11 days.
+        \item Extended the Application Manager to serve external insurance agents, providing real-time visibility into submitted application status.
+        \item Developed a Telephonic Interview application enabling phone-based agents to complete applications on behalf of clients via SSO, including guided call script UX enhancements.
+        \item Established unit testing practices using Karma, Jasmine, and Spectator, laying the foundation for a culture of quality that later scaled to $\geq$80\% coverage across the platform.
+        \item Built a suite of applications that achieved 99.9\% digital adoption by early 2025, a 5\% increase in policy placement rate, user satisfaction growth from \textasciitilde35\% to \textasciitilde50\%, and 88\% electronic policy delivery.
       \resumeItemListEnd
     \vspace{-5pt}
     \resumeSubheading{Zoho Corp.}{Full-time}
-      {Member Technical Staff}{July 2017 - March 2018}
+      {Member Technical Staff}{ 2017 - 2018}
       \resumeItemListStart
-        \item Engaged in the early data modeling and API design of a new product, \href{https://www.zoho.com/contracts/}{Zoho Contract Management}.
-        \item Implemented the model and APIs using PostgreSQL, Java and an internal zoho framework.
-        \item Programmed an abstraction layer for integrating with another zoho service.
-        \item Collaborated with a thirteen-member team in the aforementioned work.
+        \item Spearheaded early data modeling efforts for \href{https://www.zoho.com/contracts/}{Zoho Contract Management} using PostgreSQL, reducing data redundancy by 20\% and optimizing query performance for faster contract retrieval.
+        \item Collaborated within a thirteen-member team to implement the data model and APIs using PostgreSQL, Java, and an internal Zoho framework.
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
-%-----------PROJECTS-----------------
-\vspace{-5pt}
-\section{Academic Projects}
-  \resumeSubHeadingListStart
-    \resumeSubItem{Playing Atari Games using Reinforcement learning (B.Tech Final Project)}{Research oriented project based on paper: \href{https://arxiv.org/pdf/1312.5602.pdf}{https://arxiv.org/pdf/1312.5602.pdf} by the Deep Mind team at Google. Built a program that could achieve super human performance in atari games using Q-learning and convolutional neural networks.}
-    \vspace{2pt}
-    \resumeSubItem{Indoor Navigation system using Bluetooth Low Energy (BLE) tags}{Indoor navigation system that featured an AngularJS based admin panel to upload and configure maps and an android application for users to navigate on the map. The system was made for use within large malls or hospitals.}
-    \vspace{2pt}
-    \resumeSubItem{IEEE LINK App}{A Social networking application built for IEEE Local Integrated Network for Kerala (LINK) IEEE students.}
-    \vspace{2pt}
-    \resumeSubItem{Face-detection and photography rover}{An automated face detection and photography rover built for automated photography at events. It was built using a raspberry pi board and an android phone. It was deployed during a technical event at College of Engineering Trivandrum in 2014 and took 7000+ photos.}
-  \resumeSubHeadingListEnd
+% %-----------PROJECTS-----------------
+% \vspace{-5pt}
+% \section{Academic Projects}
+%   \resumeSubHeadingListStart
+%     \resumeSubItem{Playing Atari Games using Reinforcement learning (B.Tech Final Project)}{Research oriented project based on paper: \href{https://arxiv.org/pdf/1312.5602.pdf}{https://arxiv.org/pdf/1312.5602.pdf} by the Deep Mind team at Google. Built a program that could achieve super human performance in atari games using Q-learning and convolutional neural networks.}
+%     \vspace{2pt}
+%     \resumeSubItem{Indoor Navigation system using Bluetooth Low Energy (BLE) tags}{Indoor navigation system that featured an AngularJS based admin panel to upload and configure maps and an android application for users to navigate on the map. The system was made for use within large malls or hospitals.}
+%     \vspace{2pt}
+%     \resumeSubItem{IEEE LINK App}{A Social networking application built for IEEE Local Integrated Network for Kerala (LINK) IEEE students.}
+%     \vspace{2pt}
+%     \resumeSubItem{Face-detection and photography rover}{An automated face detection and photography rover built for automated photography at events. It was built using a raspberry pi board and an android phone. It was deployed during a technical event at College of Engineering Trivandrum in 2014 and took 7000+ photos.}
+%   \resumeSubHeadingListEnd
 
 %-----------EDUCATION-----------------
 \vspace{-5pt}
@@ -133,7 +142,7 @@ Front-end engineer with 7+ years building scalable web applications in Angular a
   \resumeSubHeadingListStart
     \resumeSubheading
       {College of Engineering Trivandrum (University of Kerala)}{Thiruvananthapuram, India}
-      {Bachelor of Technology - Computer Science and Engineering; CGPA: 8.35/10}{2013 - 2017}
+      {Bachelor of Technology - Computer Science and Engineering}{2013 - 2017}
   \resumeSubHeadingListEnd
 
 %-----------AWARDS-----------------
